@@ -1,0 +1,12 @@
+<div class="toolbar">
+  <button (click)="beautifyJson()">Beautify JSON</button>
+  <button (click)="minifyJson()">Minify JSON</button>
+  <button (click)="validateJson()">Validate JSON</button>
+</div>
+<div class="panels">
+  <div id="inputPanel" class="panel"></div>
+  <div id="outputPanel" class="panel"></div>
+</div>
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
